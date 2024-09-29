@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<!--
+L3galname
+FreeCodeCamp Responsive Web - Survey Project
+Sept 26 2024
+-->
+
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <title>Water Controversy Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Does Water Have Flavor?</h1>
+    <p id="description">Thank you for contributing to this world changing debate</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+
+      <!--Name, Age, and Number-->
+      <fieldset>
+        <label id="name-label" for="name">Name <input type="text" id="name" placeholder="Your name here" required> </label>
+        <label id="email-label" for="email">Email <input type="email" id="email" placeholder="example@wowzers.com" required> </label>
+        <label id="number-label" for="number">Age <input type="number" id="number" placeholder="Age" min="4" max="42"> </label>
+      </fieldset>
+
+      <!--water has flavor dropdown section-->
+      <fieldset>
+        <label for="dropdown">Now please answer, does water have flavor? 
+          <select id="dropdown" required>
+            <option value="0">YES</option>
+            <option value="1">no.</option>
+            <option value="2">Uhhhhmmmmuherm-</option>
+            <option value="3">What's water? :nerd:</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!--Form share radio buttons-->
+      <fieldset>
+        <legend>Will you share this form to someone else? (required)</legend>
+          <label for="yes"> <input type="radio" id="yes" name="formShare" value="yes" checked class="inline"> Yes</label>
+          <label for="doubleYes"> <input type="radio" id="doubleYes" name="formShare" value="yesyes" class="inline"> Yes (with rizz)</label>
+          <label for="absolutely"> <input type="radio" id="absolutely" name="formShare" value="yesyesyes" class="inline"> Uhhh yeah, absolutely??</label>
+      </fieldset>
+
+      <!--Text area-->
+      <fieldset>
+        <label for="essay"> Feel free to write a 1000 word essay on how water DOES indeed have flavor:
+          <textarea id="essay" name="essay" rows="10" cols="10" placeholder="(minimum 1 character required...)" minlength="1" required></textarea>
+        </label>
+      </fieldset>
+
+      <!--Favorite water checkmark section-->
+      <fieldset>
+        <legend>What's YOUR favorite type of water! (Select at least one)</legend>
+        <label for="standard">
+          <input type="checkbox" id="standard" name="favoriteWater" class="inline" value="0"> Water Standard
+        </label>
+        
+        <label for="plus">
+          <input type="checkbox" id="plus" name="favoriteWater" class="inline" value="1"> Water Plus
+        </label>
+        
+        <label for="lemon">
+          <input type="checkbox" id="lemon" name="favoriteWater" class="inline" value="2"> Water with lemon
+        </label>
+
+        <label for="iced">
+          <input type="checkbox" id="iced" name="favoriteWater" class="inline" value="3"> Iced Water
+        </label>
+
+        <label for="icedLemon">
+          <input type="checkbox" id="icedLemon" name="favoriteWater" class="inline" value="4"> Iced Water with lemon
+        </label>
+
+        <label for="roomTemp">
+          <input type="checkbox" id="roomTemp" name="favoriteWater" class="inline" value="5"> Room temperature Water
+        </label>
+        
+        <label for="fiji">
+          <input type="checkbox" id="fiji" name="favoriteWater" class="inline" value="6"> Fiji Water
+        </label>
+
+        <label for="icelandic">
+          <input type="checkbox" id="icelandic" name="favoriteWater" class="inline" value="7"> Icelandic Water
+        </label>
+
+        <label for="pb">
+          <input type="checkbox" id="pb" name="favoriteWater" class="inline" value="8"> Peanut Butter (HOW DID THIS GET HERE)
+        </label>
+
+        <label for="dog">
+          <input type="checkbox" id="dog" name="favoriteWater" class="inline" value="9"> Dog Water
+        </label>
+
+        <label for="hotDog">
+          <input type="checkbox" id="hotDog" name="favoriteWater" class="inline" value="10"> Hot Dog Water
+        </label>
+
+        <label for="hottestDog">
+          <input type="checkbox" id="hottestDog" name="favoriteWater" class="inline" value="11"> Hottest Dog Water
+        </label>
+
+        <label for="h20">
+          <input type="checkbox" id="h20" name="favoriteWater" class="inline" value="12"> H2O Water
+        </label>
+
+        <label for="h30">
+          <input type="checkbox" id="h30" name="favoriteWater" class="inline" value="13"> H3O Water
+        </label>
+
+        <label for="water2">
+          <input type="checkbox" id="water2" name="favoriteWater" class="inline" value="14"> Water 2
+        </label>
+
+        <label for="unsweet">
+          <input type="checkbox" id="unsweet" name="favoriteWater" class="inline" value="15"> Unsweetened Tea Water
+        </label>
+
+        <label for="sweet">
+          <input type="checkbox" id="sweet" name="favoriteWater" class="inline" value="16"> Sweet Tea Water
+        </label>
+
+        <label for="salt">
+          <input type="checkbox" id="salt" name="favoriteWater" class="inline" value="17"> Salt Water
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit">
+    </form>
+  </body>
+
+</html>
